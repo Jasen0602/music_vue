@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <TopNav></TopNav>
     <router-view/>
   </div>
 </template>
+<script>
+import TopNav from './components/TopNav'
+export default {
+  components:{
+    TopNav
+  }
+  
+}
+</script>
 
 <style>
 #app {
@@ -30,3 +36,4 @@
   color: #42b983;
 }
 </style>
+
